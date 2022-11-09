@@ -1,0 +1,87 @@
+
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Navbar</a>
+      <form class="d-flex input-group w-auto">
+        <input
+          type="search"
+          type="search"
+          class="form-control rounded"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </form>
+    </div>
+  </nav>
+
+
+<div class="parent">
+    <h1>Welcome {{user}}</h1>
+    
+    <div>
+        <a routerLink="/transaction">View Transaction Details</a>
+    </div>
+    <div class="child">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="../../assets/images/bank.png" alt="">
+            </div>
+            <div class="text-center mt-4 name">
+                Deposit
+            </div>
+        
+            <!-- <h6>{{aim}}</h6> -->
+            <form class="p-3 mt-3">
+                
+                <div class="form-field d-flex align-items-center">
+                    <input [(ngModel)]="acno" type="text" name="acno" id="depo_acno" placeholder="account number">
+                </div>
+                <div class="form-field d-flex align-items-center">
+                    <input [(ngModel)]="pswd" type="password" name="password" id="depo_pswd" placeholder="Password">
+                </div>
+                <div class="form-field d-flex align-items-center">
+                    <input [(ngModel)]="amount" type="text" name="amount" id="depo_amount" placeholder="Amount">
+                </div>
+                <button class="btn mt-3" (click)="deposit()" type="button" >Deposit</button>
+               
+            </form>
+            <div class="text-center fs-5 mt-3">
+        
+            </div>
+        </div>
+        
+    </div>
+    <div class="child">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="../../assets/images/bank.png" alt="">
+            </div>
+            <div class="text-center mt-4 name">
+                Withdraw
+            </div>
+        
+            <!-- <h6>{{aim}}</h6> -->
+            <form class="p-3 mt-3">
+                
+                <div class="form-field d-flex align-items-center">
+                    <input [(ngModel)]="acno1" type="text" name="acno" id="with_acno" placeholder="account number">
+                </div>
+                <div class="form-field d-flex align-items-center">
+                    <input [(ngModel)]="pswd1" type="password" name="password" id="with_pswd" placeholder="Password">
+                </div>
+                <div class="form-field d-flex align-items-center">
+                    <input [(ngModel)]="amount1" type="text" name="amount" id="with_amount" placeholder="Amount">
+                </div>
+                <button class="btn mt-3" (click)="withdraw()" type="button" >Withdraw</button>
+               
+            </form>
+            <div class="text-center fs-5 mt-3">
+        
+            </div>
+        </div>
+        
+    </div>
+</div>

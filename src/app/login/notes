@@ -15,3 +15,22 @@ Data Binding
 
             a)Event binding -(event_name)="function_name()"
             b)Event binding using $event -(event_name)="function_name($event)"
+            c)Event binding using template referencing variable -#variable_name
+
+    2. Two way Binding
+    [(ngModel)]="property"
+
+    Angular Routing -To set path for a component
+
+    {
+        path:value,component:class_name
+    }
+
+Dependancy Injection
+----------------------
+ To share data between two dependent classes
+
+Angular Services
+-----------------
+
+ng g s service_name

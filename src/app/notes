@@ -1,0 +1,41 @@
+Data Binding 
+
+- Share data inside the component
+
+1 One way Binding (one direction data flow)
+    ts - component
+    html - view
+
+    1.1 Component to view (ts -> html)
+
+        a) String interpolation - {{expression}}
+
+        b) Property binding - [attribute_name] = "property"
+
+    1.2 view to component(html -> ts)
+
+        a)Event binding - (event_name) = "function_name()"
+        b)Event binding using $event- (event_name) = "function_name($event)"
+
+    Angular Directives
+    -------------------
+    -To manipulate the DOM elements
+    a)Component Directives
+    b)Structural Directives
+        1)ngFor
+
+    
+
+    Angular Forms
+    --------------
+    a)Template Driven Forms
+
+    b)Model Driven Forms -adv validations
+        1)Reactive Forms
+        formGroup,array,control
+            -add validations
+            -import Reactive Form Modules
+
+
+
+
